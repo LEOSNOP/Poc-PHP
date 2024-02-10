@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <!-- CSS da aplicação -->
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/style.css">
         <script src="/js/scripts.js"></script>
     </head>
     <body>
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="collapse navbar-collapse" id="navbar">
             <a href="/" class="navbar-brand">
-              <img src="/img/hdcevents_logo.svg" alt="HDC Events">
+              <img src="/img/phpImage.png" alt="CURSO DE LARAVEL">
             </a>
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -51,7 +51,7 @@
         </div>
       </main>
       <footer>
-        <p>HDC Events &copy; 2020</p>
+        <p>CursoLaravel &copy; 2024</p>
       </footer>
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     </body>

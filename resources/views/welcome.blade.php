@@ -16,9 +16,13 @@
     <div id="cards-container" class="row">
         @foreach($events as $event)
         <div class="card col-md-3">
-            <img src="/img/event image.jpg" alt="{{ $event->title }}">
+            <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
             <div class="card-body">
-                <p class="card-date">{{ $event ->updated_at }}</p>
+                @if($event->created_at)
+                    <p class="card-date">{{ $event->created_at->format('d/m/Y') }}</p>
+                @else
+                    <p class="card-date">Data do evento não disponível</p>
+                @endif
                 <h5 class="card-title">{{ $event->title }}</h5>
                 <p class="card-participants">X Participantes</p>
                 <a href="#" class="btn btn-primary">Saber mais</a>
