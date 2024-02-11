@@ -4,6 +4,7 @@
 
 @section('content')
 
+
 <div id="event-create-container" class="col-md-6 offset-md-3">
   <h1>Crie o seu evento</h1>
   <form action="/events" method="POST" enctype="multipart/form-data">
@@ -11,6 +12,10 @@
     <div class="form-group">
       <label for="title">Evento:</label>
       <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento">
+    </div>
+    <div class="form-group">
+      <label for="date">Data do evento:</label>
+      <input type="date" class="form-control" id="date" name="date">
     </div>
     <div class="form-group">
       <label for="title">Cidade:</label>
@@ -48,6 +53,7 @@
       <div class="form-group">	
         <input type="checkbox" name="items[]" value="Brindes"> Brindes
       </div>
+      <script src="/js/alert.js"></script>
     <input type="submit" class="btn btn-primary" value="Criar Evento">
   </form>
 </div>
