@@ -25,7 +25,7 @@
                 @endif
                 <h5 class="card-title">{{ $event->title }}</h5>
                 <p class="card-participants">X Participantes</p>
-                <a href="#" class="btn btn-primary">Saber mais</a>
+                <a href="/events/{{ $event->id }}" class="btn btn-primary">Saber mais</a>
             </div>
         </div>
         @endforeach
