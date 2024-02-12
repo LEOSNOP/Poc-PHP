@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Event;
-
 use App\Models\User;
 
 class EventController extends Controller
@@ -126,6 +125,18 @@ class EventController extends Controller
         $event = Event::findOrFail($id);
 
         return view('events.edit', ['event' => $event]);
+
+    }
+
+    public function joinEvent($id) {
+
+        $user = auth()->user();
+
+        $user->eventsAsParticipant()->attach($id);
+
+        $event = Event::findOrFail($id);
+
+        return redirect('/dashboard')->with('msg', 'Sua presença está confirmada no evento ' . $event->title);
 
     }
 
